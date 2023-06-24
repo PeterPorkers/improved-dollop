@@ -1,0 +1,13 @@
+def calculate_delivery_price(distance, weight):
+    base_price = 10  # Base delivery price
+    distance_factor = 0.5  # Price per kilometer
+    weight_factor = 2  # Price per kilogram
+
+    delivery_price = base_price + (distance * distance_factor) + (weight * weight_factor)
+    return delivery_price
+
+distance = float(input("Enter the distance (in kilometers): "))
+weight = float(input("Enter the weight (in kilograms): "))
+
+price = calculate_delivery_price(distance, weight)
+print("Delivery Price:", price)
